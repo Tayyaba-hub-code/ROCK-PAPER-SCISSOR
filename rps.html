@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title >
+    Rock paper scissors
+   </title>
+   <link rel="stylesheet" href="rps.css">
+   <style>
+     .move-emoji {
+       width: 50px;
+       height: 50px;
+       object-fit: contain;
+     }
+   </style>
+</head>
+<body class="body">
+  <p class="game">Rock Paper Scissors</p>
+  <button  onclick="playeGame('rock')" class="emojis">
+    <img  class="move"   src="rock-emoji.png" alt="Rock">
+  </button>
+<button onclick="playeGame('paper')" class="emojis">
+  <img class="move" src="paper-emoji.png" alt="Paper">
+</button>
+
+<button onclick="playeGame('scissors')" class="emojis">
+  <img class="move"  src="scissors-emoji.png" alt="Scissors">
+</button>
+<p class="js-result"></p>
+<p class="js-moves"></p>
+<p class="js-score"></p>
+
+
+<button onclick="resetScore()" 
+                class="reset">  RESET
+                </button>
+                
+</body>
+ <script src="rps.js"></script>
+
+</html>
